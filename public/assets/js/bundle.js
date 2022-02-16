@@ -88,7 +88,7 @@ var Register = /*#__PURE__*/function () {
 
       if (!validator__WEBPACK_IMPORTED_MODULE_1___default().isStrongPassword(passwordInput.value) || passwordInput.value.length < 8 || passwordInput.value.length > 50) {
         error = true;
-        this.showError('Insert a stronger password', '.ejs-tag-password');
+        this.showError('Insert a stronger password - minimum of 8 charaters with at least 1 uppercase, 1 symbol and 1 number ', '.ejs-tag-password');
       }
 
       if (!error) el.submit();
@@ -134,12 +134,12 @@ var Login = /*#__PURE__*/function (_Register) {
 
       if (!validator__WEBPACK_IMPORTED_MODULE_1___default().isEmail(emailInput.value)) {
         error = true;
-        this.showError('Insert a valid email', '.ejs-tag-email-login');
+        this.showError('Insert a valid email or password', '.ejs-tag-email-login');
       }
 
       if (!validator__WEBPACK_IMPORTED_MODULE_1___default().isStrongPassword(passwordInput.value) || passwordInput.value.length < 8 || passwordInput.value.length > 50) {
         error = true;
-        this.showError('Insert a stronger password', '.ejs-tag-password-login');
+        this.showError('Insert a stronger password or password', '.ejs-tag-password-login');
       }
 
       if (!error) el.submit();
