@@ -35,7 +35,7 @@ export class Register {
         }
         if (!validator.isStrongPassword(passwordInput.value) || passwordInput.value.length < 8 || passwordInput.value.length > 50) {
             error = true
-            this.showError('Insert a stronger password', '.ejs-tag-password')
+            this.showError('Insert a stronger password - minimum of 8 charaters with at least 1 uppercase, 1 symbol and 1 number ', '.ejs-tag-password')
         }
         if (!error) el.submit()
     }
@@ -64,11 +64,11 @@ export class Login extends Register {
         let error = false
         if (!validator.isEmail(emailInput.value)) {
             error = true
-            this.showError('Insert a valid email', '.ejs-tag-email-login')
+            this.showError('Insert a valid email or password', '.ejs-tag-email-login')
         }
         if (!validator.isStrongPassword(passwordInput.value) || passwordInput.value.length < 8 || passwordInput.value.length > 50) {
             error = true
-            this.showError('Insert a stronger password', '.ejs-tag-password-login')
+            this.showError('Insert a stronger password or password', '.ejs-tag-password-login')
         }
         if (!error) el.submit()
     }
