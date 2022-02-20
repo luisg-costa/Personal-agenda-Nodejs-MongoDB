@@ -20,7 +20,7 @@ const flash = require('connect-flash')
 const routes = require('./routes')
 const path = require('path')
 
-const helmet = require('helmet')
+//const helmet = require('helmet')
 const csrf = require('csurf')
 
 const {checkCsrfError, csrfMiddleware, inputErrors, messages, sessionUser} = require('./src/middleware/middleware')
@@ -32,7 +32,7 @@ app.use(express.json())
 app.use(express.static(path.resolve(__dirname,'public')))
 
 //ativer o helmet - segurança
-app.use(helmet())
+//app.use(helmet())
 
 //configurar a session
 const sessionOptions = session({
