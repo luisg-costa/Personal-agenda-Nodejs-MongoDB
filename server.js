@@ -1,11 +1,8 @@
-//para ler o ficheiro .env
 require('dotenv').config()
 
 const express = require('express')
-//cria a app com express
 const app = express()
 
-//conexão DB
 const mongoose = require('mongoose')
 mongoose.connect(process.env.CONNECTIONSTRING)
     .then(() => {
@@ -20,21 +17,16 @@ const flash = require('connect-flash')
 const routes = require('./routes')
 const path = require('path')
 
-//const helmet = require('helmet')
+const helmet = require('helmet')
 const csrf = require('csurf')
 
 const {checkCsrfError, csrfMiddleware, inputErrors, messages, sessionUser} = require('./src/middleware/middleware')
 
-//para conseguirmos receber o que vem num POST
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-//para os arquivos estáticos (css, img, etc..)
 app.use(express.static(path.resolve(__dirname,'public')))
+app.use(helmet())
 
-//ativer o helmet - segurança
-//app.use(helmet())
-
-//configurar a session
 const sessionOptions = session({
     secret: 'asd435ofdsgodfsombvxzc433q',
     store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING }),
@@ -48,18 +40,16 @@ const sessionOptions = session({
 app.use(sessionOptions)
 app.use(flash())
 
-//para configurar as views
 app.set('views', path.resolve(__dirname,'src','views'))
 app.set('view engine', 'ejs')
 
-//csrf token
 app.use(csrf())
-app.use(csrfMiddleware) // gerar token
-app.use(checkCsrfError) //tratar os erros
+app.use(csrfMiddleware) 
+app.use(checkCsrfError) 
 app.use(inputErrors)
 app.use(messages)
 app.use(sessionUser)
-//para configurar as rotas
+
 app.use(routes)
 
 app.on('start', () => {
