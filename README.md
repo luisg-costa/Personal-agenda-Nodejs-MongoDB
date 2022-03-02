@@ -34,6 +34,7 @@ npm start
 ```
 Now, you can test it in your [localhost]('http://localhost:3000/')
 
+**NOTE:**
 If you change anything in frontend folder, you need to run Webpack (generate a javascript file to ensure that javascript runs in all browsers).
 To run Webpack:
 ```
