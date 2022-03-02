@@ -42,6 +42,17 @@ npm run dev
 
 ## Usage
 
+On the homepage are shown your contacts if you already made login.
+
+If not, you need to register/login first.
+
+![image](https://user-images.githubusercontent.com/99747197/156358016-59a0ca29-279c-4a5b-84eb-5b0dad9ccf3e.png)
+
+Once you have logged in, you see your contacts like that:
+
+![image](https://user-images.githubusercontent.com/99747197/156359613-839c980c-ba9c-4065-834c-eba2ff0050e1.png)
+
+You can edit, delete or create more contacts.
 
 
 ## Contact
