@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Agenda - NodeJS and MongoDB
 Agenda made with NodeJS and MongoDB.
 You can see and test it (deployed on my AWS server) - [Agenda](https://agendanodejs.sytes.net/)
@@ -46,4 +47,3 @@ npm run dev
 
 ## Contact
 If you have any question, feel free to [contact me](https://www.linkedin.com/in/lu%C3%ADs-costa-793a2414b/)
-
