@@ -19,7 +19,7 @@ To run this Agenda project in your machine, you need to download and unzip the c
 First of all, you need to go on [MongoDB](https://www.mongodb.com/) website and register on MongoDB Atlas. After you have an account in MongoDB Atlas, you need to make a cluster. You can see how to do that in google, it´s easy to do.
 
 Next you need to create a file named '.env' in your project folder with the following:
-``````
+```
 CONNECTIONSTRING=mongodb+srv://YOURUSERNAME:YOURPASSWORD@cursojs.ifpiy.mongodb.net/DATABASENAME?retryWrites=true&w=majority
 ```
 You need to replace 'YOURUSERNAME', YOURPASSWORD and DATABASENAME for your credentials. MongoDB Atlas gives you that string with your credentials already filled.
