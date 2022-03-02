@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Agenda - NodeJS and MongoDB
 Agenda made with NodeJS and MongoDB.
 You can see and test it (deployed on my AWS server) - [Agenda](https://agendanodejs.sytes.net/)
@@ -23,7 +22,7 @@ Next you need to create a file named '.env' in your project folder with the foll
 ```
 CONNECTIONSTRING=mongodb+srv://YOURUSERNAME:YOURPASSWORD@YOURCLUSTERNAME.ifpiy.mongodb.net/DATABASENAME?retryWrites=true&w=majority
 ```
-You need to replace 'YOURUSERNAME', YOURPASSWORD and DATABASENAME for your credentials. MongoDB Atlas gives you that string with your credentials already filled.
+You need to replace 'YOURUSERNAME', YOURPASSWORD, YOURCLUSTERNAME and DATABASENAME for your credentials. MongoDB Atlas gives you that string with your credentials already filled.
 
 After that, you need do run the following command to install all dependencies:
 ```
