@@ -1,5 +1,5 @@
-# Agenda - NodeJS and MongoDB
-Agenda made with NodeJS and MongoDB.
+# Agenda - ExpressJS and MongoDB
+Agenda made with ExpressJS and MongoDB.
 You can see and test it (deployed on my AWS server) - [Agenda](https://agendanodejs.sytes.net/)
 
 ## Table of Contents
