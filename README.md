@@ -20,7 +20,7 @@ First of all, you need to go on [MongoDB](https://www.mongodb.com/) website and 
 
 Next you need to create a file named '.env' in your project folder with the following:
 ```
-CONNECTIONSTRING=mongodb+srv://YOURUSERNAME:YOURPASSWORD@cursojs.ifpiy.mongodb.net/DATABASENAME?retryWrites=true&w=majority
+CONNECTIONSTRING=mongodb+srv://YOURUSERNAME:YOURPASSWORD@YOURCLUSTERNAME.ifpiy.mongodb.net/DATABASENAME?retryWrites=true&w=majority
 ```
 You need to replace 'YOURUSERNAME', YOURPASSWORD and DATABASENAME for your credentials. MongoDB Atlas gives you that string with your credentials already filled.
 
